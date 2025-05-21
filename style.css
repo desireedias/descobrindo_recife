@@ -4,14 +4,12 @@
     margin: 0;
 }
 
+.container{
+    max-width: 90%;
+}
+
 .navbar-nav .nav-link.active{
             color: #fff;
-        }
-
-        section{
-            height: 100vh;
-            background-color: #ebeaea;
-            
         }
 
         header{
@@ -19,6 +17,7 @@
             position: sticky; /* Define sticky como padrão */
             top: 0;
             left: 0;
+            z-index: 1000;
         }
         .carousel-item img{
             width: 100%;
@@ -28,9 +27,31 @@
         }
 
         .gastronomia-section{
-            background-color: rgb(152, 152, 243);
-            padding: 60px 0;
+            padding: 30px;
+            background-color: blue;
         }
+
+        .card{
+            height: 100%;
+        }
+
+        .card-img-top{
+            height: 200px;
+            object-fit: cover;
+        }
+
+
+
+
+        @media screen and (min-width: 576px) {
+            header {
+                position: static; /* Remove o sticky em telas maiores */
+            }
+
+            .container{
+                max-width: 720px;
+            }
+        } 
 
         @media screen (max-width: 575px) {
             header{
@@ -38,11 +59,5 @@
                 top: 0;
                 left: 0;
                 z-index: 1000;
-            }
-
-
-            @media screen and (min-width: 576px) {
-            header {
-                position: static; /* Remove o sticky em telas maiores */
             }
         }

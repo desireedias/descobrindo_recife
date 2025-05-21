@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="cabeçalho">
-        <div class="navbar navbar-expand-lg">
+        <div class="navbar navbar-expand-sm navbar-expand-lg">
             <div class="container">
                 <h1>Descobrindo Recife</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" >
@@ -18,20 +18,21 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#inicio">Home</a>
+                            <a class="nav-link active" href="#inicio">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#produtos">Pontos turísticos</a>
+                            <a class="nav-link" href="#produtos">Sabores de Recife</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#promocoes">Cultura e Arte</a>
+                            <a class="nav-link" href="#promocoes">Pontos Turísticos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contato">Sabores de Recife</a>
+                            <a class="nav-link" href="#contato">Cultura e Arte</a>
                         </li>
                     </ul>
+                    <button id="btn-checar-email" type="button" class="btn btn-warning">Fale conosco</button>
                 </nav>
-                <button id="btn-checar-email" type="button" class="btn btn-warning">Fale conosco</button>
+                
             </div>
         </div>
     </header>
@@ -90,35 +91,37 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-12">
                         <div class="card">
-                            <div class="cabecalho">
-                                Arrumadinho
-                            </div>
-                            <img src="./imagens/Arrumadinho-de-Charque-1536x1024.jpeg" alt="arrmadinho">
+                            <img class="card-img-top" src="./imagens/Arrumadinho-de-Charque-1536x1024.jpeg" alt="arrmadinho">
                             <div class="card-body">
                                 <h4 class="card-title">Arrumadinho</h4>
-                                <p class="text">Uma refeição prática e saborosa, geralmente composta por charque desfiado, feijão verde cozido, arroz branco, vinagrete e farofa. Um prato completo que representa a culinária regional.</p>
+                                <p class="text">Uma refeição prática e saborosa, geralmente composta por charque desfiado, feijão verde cozido, arroz branco, vinagrete e farofa. Um prato completo que representa a culinária regional.
+                                </p>
+                                <a href="#" class="btn btn-primary"> Saiba mais</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
                         <div class="card">
-                            <div class="cabecalho">
-                                Bolo de rolo
+                            <img class="card-img-top" src="./imagens/Bolo-de-rolo.jpg" alt="bolo de rolo">
+                            <div class="card-body">
+                                <h4 class="card-title">Bolo de rolo</h4>
+                                <p class="text">
+                                    Uma sobremesa icônica de Pernambuco, feita de finíssimas camadas de massa enrolada com um recheio generoso de goiabada. Delicado, saboroso e perfeito para acompanhar um café.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
                             </div>
-                            <img src="./imagens/Bolo-de-rolo.jpg" alt="bolo de rolo">
-                            <h4 class="card-title">Bolo de rolo</h4>
-                            <p class="card-text">
-                                Uma sobremesa icônica de Pernambuco, feita de finíssimas camadas de massa enrolada com um recheio generoso de goiabada. Delicado, saboroso e perfeito para acompanhar um café.
-                            </p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
                         <div class="card">
-                            <img src="./imagens/caldinho-feijão-gastronomia.PNG" alt="caldinho feijão">
-                            <h4 class="card-title">Caldinhos</h4>
-                            <p class="card-text">
-                                Cremosos e reconfortantes, os caldinhos são uma pedida popular em Recife, com diversas opções como feijão, frutos do mar, mocotó e outros sabores. Ideais para um petisco ou entrada.
-                            </p>
+                            <img class="card-img-top" src="./imagens/caldinho-feijão-gastronomia.PNG" alt="caldinho feijão">
+                            <div class="card-body">
+                                <h4 class="card-title">Caldinhos</h4>
+                                <p class="card-text">
+                                    Cremosos e reconfortantes, os caldinhos são uma pedida popular em Recife, com diversas opções como feijão, frutos do mar, mocotó e outros sabores. Ideais para um petisco ou entrada.
+                                </p>
+                                <a href="#" class="btn btn-primary"> Saiba mais</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,23 +129,14 @@
             
         </section>
         <section id="produtos">
-            <h2>produtos</h2>
-            <div class="container">
-                <nav class="nav nav-tabs">
-                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Eletronicos</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda Masculina</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda Feminina</button>
-                </nav>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="aba1">Conteudo da aba eletronicos</div>
-                    <div class="tab-pane" id="aba2">Conteudo da aba moda masculina</div>
-                    <div class="tab-pane" id="aba3">Conteudo da aba moda feminina</div>
-                </div>
-            </div>
+            <h2>Pontos Turísticos</h2>
+            
         </section>
+
         <section id="promocoes">
-            <h2>promoçoes</h2>
+            <h2>Cultura e Arte</h2>
         </section>
+
         <section id="contato">
             <h2>contato</h2>
         </section>
