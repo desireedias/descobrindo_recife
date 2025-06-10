@@ -6,12 +6,15 @@
     <title>NavBar no boostrap</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="cabeçalho">
-        <div class="navbar navbar-expand-sm navbar-expand-lg">
+        <div class="navbar navbar-expand-lg">
             <div class="container">
-                <h1>Descobrindo Recife</h1>
+                <h1 class="h2 fonte-fugaz">Descobrindo Recife</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" >
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,8 +47,8 @@
                     <img class="d-block w-100" src="./imagens/marco-zero-vista-aerea.jpg" alt="">
                 </div>
                 <div class="carousel-caption">
-                    <h2>Marco Zero</h2>
-                    <p>O coração histórico de Recife</p>
+                    <h2 class="fonte-fugaz h1">Marco Zero</h2>
+                    <p class="fw-bold">O coração histórico de Recife</p>
                 </div>
             </div>
 
@@ -54,8 +57,8 @@
                     <img class="d-block w-100" src="./imagens/olinda-vista-aerea.avif" alt="">
                 </div>
                 <div class="carousel-caption">
-                    <h2>Olinda</h2>
-                    <p>A cidade patrimônio mundial pertinho de Recife</p>
+                    <h2 class="fonte-fugaz h1">Olinda</h2>
+                    <p class="fw-bold">A cidade patrimônio mundial pertinho de Recife</p>
                 </div>
             </div>
 
@@ -64,8 +67,8 @@
                     <img class="d-block w-100" src="./imagens/dancarinos-de-frevo-no-carnaval-de-rua-em-recife-pernambuco-brasil_63135-3943.jpg" alt="">
                 </div>
                 <div class="carousel-caption">
-                    <h2>Frevo</h2>
-                    <p>O ritmo e dança que pulsa no coração de Pernambuco</p>
+                    <h2 class="fonte-fugaz h1">Frevo</h2>
+                    <p class="fw-bold">O ritmo e dança que pulsa no coração de Pernambuco</p>
                 </div>
             </div>
 
@@ -86,25 +89,25 @@
 
     <div data-bs-spy="scroll" data-bs-target="#cabeçalho">
         <section class="gastronomia-section" id="gastronomia">
-            <h2 class=" text-center p-4 mb-4">Sabores de Recife</h2>
+            <h2 class=" text-center mt-4 fonte-fugaz">Sabores de Recife</h2>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-12">
+                <div class="row p-md-3">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
                         <div class="card">
                             <img class="card-img-top" src="./imagens/Arrumadinho-de-Charque-1536x1024.jpeg" alt="arrmadinho">
                             <div class="card-body">
-                                <h4 class="card-title">Arrumadinho</h4>
+                                <h4 class="card-title  fw-bold mb-3">Arrumadinho</h4>
                                 <p class="text">Uma refeição prática e saborosa, geralmente composta por charque desfiado, feijão verde cozido, arroz branco, vinagrete e farofa. Um prato completo que representa a culinária regional.
                                 </p>
                                 <a href="#" class="btn btn-primary"> Saiba mais</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
-                        <div class="card">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card ">
                             <img class="card-img-top" src="./imagens/Bolo-de-rolo.jpg" alt="bolo de rolo">
                             <div class="card-body">
-                                <h4 class="card-title">Bolo de rolo</h4>
+                                <h4 class="card-title  fw-bold mb-3">Bolo de rolo</h4>
                                 <p class="text">
                                     Uma sobremesa icônica de Pernambuco, feita de finíssimas camadas de massa enrolada com um recheio generoso de goiabada. Delicado, saboroso e perfeito para acompanhar um café.
                                 </p>
@@ -112,11 +115,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
-                        <div class="card">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card ">
                             <img class="card-img-top" src="./imagens/caldinho-feijão-gastronomia.PNG" alt="caldinho feijão">
                             <div class="card-body">
-                                <h4 class="card-title">Caldinhos</h4>
+                                <h4 class="card-title  fw-bold mb-3">Caldinhos</h4>
                                 <p class="card-text">
                                     Cremosos e reconfortantes, os caldinhos são uma pedida popular em Recife, com diversas opções como feijão, frutos do mar, mocotó e outros sabores. Ideais para um petisco ou entrada.
                                 </p>
@@ -128,17 +131,129 @@
             </div>
             
         </section>
-        <section id="produtos">
-            <h2>Pontos Turísticos</h2>
-            
+        <section class="turistico-section" id="produtos">
+            <h2 class="text-center fonte-fugaz pt-4" >Pontos Turísticos</h2>
+            <div class="container">
+                <div class="row p-md-3">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card">
+                            <img class="card-img-top"  src="./imagens/oficina-francisco-brennand-768x512.png" alt="oficina Brennand">
+                            <div class="card-body">
+                                <h4 class="card-tittle fw-bold mb-3">Oficina Francisco Brennand</h4>
+                                <p class="card-text">
+                                    Um universo mágico e singular onde arte, arquitetura e natureza se entrelaçam. Descubra as esculturas monumentais e cerâmicas de Francisco Brennand em um complexo de beleza ímpar, um verdadeiro mergulho na imaginação do artista.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card">
+                            <img class="card-img-top"  src="./imagens/paço-do-frevo.jpg" alt="paço do frevo">
+                            <div class="card-body">
+                                <h4 class="card-tittle fw-bold mb-3">Paço do Frevo</h4>
+                                <p class="card-text">
+                                    O coração pulsante do Frevo em Recife! Este espaço vibrante celebra e preserva o ritmo e a dança que são Patrimônio Imaterial da Humanidade. Viva a energia contagiante do frevo com exposições, aulas e apresentações ao vivo.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card">
+                            <img class="card-img-top"  src="./imagens/cais-do-sertao.jpg" alt="cais do sertao">
+                            <div class="card-body">
+                                <h4 class="card-tittle fw-bold mb-3">Cais do sertao</h4>
+                                <p class="card-text">
+                                    Um museu interativo e emocionante que celebra a cultura e o legado do Sertão nordestino, com destaque para a vida e obra de Luiz Gonzaga, o Rei do Baião. Uma imersão tecnológica e sensorial no universo árido, mas vibrante, da região.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="promocoes">
-            <h2>Cultura e Arte</h2>
+        <section class="cultura-section" id="promocoes">
+            <h2 class="text-center pt-4 fonte-fugaz" >Cultura e Arte</h2>
+            <div class="container">
+                <div class="row p-md-3" >
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card">
+                            <img class="card-img-top"  src="./imagens/carnaval-recife.jpg" alt="galo da madrugada">
+                            <div class="card-body">
+                                <h4 class="card-tittle fw-bold mb-3" fw-bold mb-3">Festejos do Carnaval</h4>
+                                <p class="card-text">
+                                    O Carnaval do Recife, maior manifestação cultural da cidade, é reconhecido no Brasil e no mundo por sua diversidade de ritmos e forte presença da cultura popular. Maracatu, caboclinhos, coco-de-roda, ciranda, samba, afoxé e o frevo este último reconhecido como Patrimônio Cultural Imaterial da Humanidade.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card">
+                            <img class="card-img-top"  src="./imagens/ciclo-junino.jpeg" alt="ciclo junino">
+                            <div class="card-body">
+                                <h4 class="card-tittle fw-bold mb-3"">Ciclo Junino</h4>
+                                <p class="card-text">
+                                    A festividade em homenagem ao Santo Antônio, São João e São Pedro, realizada no mês de junho, une o lado religioso com a realização de missas e procissões, com o profano, onde acontecem shows de forró, baião, xaxado e apresentações de quadrilhas juninas.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
+                        <div class="card">
+                            <img class="card-img-top"  src="./imagens/artesanato-recife.jpeg" alt="artesanato recife">
+                            <div class="card-body">
+                                <h4 class="card-tittle fw-bold mb-3"">Artesanato</h4>
+                                <p class="card-text">
+                                    Conhecido por sua riqueza cultural, o Recife conta com a criatividade dos trabalhos de artesãos locais e regionais que transformam madeira, couro, cerâmica, tecidos e fios, por meio das mais diversas técnicas, em verdadeiras obras de arte. Os admiradores de arte sacra, tapetes, rendas, cestaria, confecção, entre outros tipos de trabalho, poderão adquirir essas peças elaboradas por profissionais, cujos trabalhos são reconhecidos nacional e internacionalmente nos seguintes locais:
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>contato</h2>
+        <section class="contato-section d-flex w-100 align-items-center justify-content-center p-3 " id="contato">
+            <div class="container-form w-100 ">
+                <div class="row">
+                    <h2 class="text-center pt-4 fonte-fugaz">Fale Conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div>
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div>
+                                <label for="e-mail" class="form-label fw-bold">Seu email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div>
+                                <label for="telefone" class="form-label fw-bold">Seu telefone</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div>
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" ></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary my-3 w-100">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
         </section>
     </div>
 

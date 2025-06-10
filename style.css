@@ -8,6 +8,8 @@
     max-width: 90%;
 }
 
+
+
 .navbar-nav .nav-link.active{
             color: #fff;
         }
@@ -19,6 +21,17 @@
             left: 0;
             z-index: 1000;
         }
+
+        .fonte-fugaz{
+            font-family: "Fugaz One", sans-serif;
+        }
+
+        #carousel-exemplo h2,
+        #carousel-exemplo p, {
+            color: rgb(240, 238, 238);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
+        }
+        
         .carousel-item img{
             width: 100%;
             height: auto;
@@ -26,32 +39,44 @@
             object-fit: cover;
         }
 
-        .gastronomia-section{
-            padding: 30px;
-            background-color: blue;
-        }
 
         .card{
             height: 100%;
+            border: 2px groove rgb(171, 160, 219);
+            
+            
         }
+
 
         .card-img-top{
             height: 200px;
             object-fit: cover;
         }
 
+        .turistico-section,
+        .contato-section {
+            background-color: #dfe9f7;
+        }
 
 
 
-        @media screen and (min-width: 576px) {
+        @media screen and (min-width: 992px) {
             header {
                 position: static; /* Remove o sticky em telas maiores */
             }
 
             .container{
-                max-width: 720px;
+                max-width: 960px;
+            }
+
+            section {
+                padding: 30px;
             }
         } 
+
+        .container-form{
+            max-width: 520px;
+        }
 
         @media screen (max-width: 575px) {
             header{
